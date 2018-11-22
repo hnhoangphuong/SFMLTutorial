@@ -19,7 +19,7 @@ ResourcesManager *ResourcesManager::getInstance() {
 	return s_Instance;
 }
 
-Texture* ResourcesManager::cacheImage(const char *imgName, int &w, int &h)
+Texture* ResourcesManager::cacheImage(const char *imgName)
 {
 	Texture *texture = nullptr;
 
@@ -39,8 +39,6 @@ Texture* ResourcesManager::cacheImage(const char *imgName, int &w, int &h)
 		// A.Phuong TODO CHECK
 		texture = new Texture();
 		texture->loadFromFile(imgName);
-		w = texture->getSize().x;
-		h = texture->getSize().y;
 		if (texture) {
 			std::pair<const char *, Texture*> pair(imgName, texture);
 			m_textureCacher->insert(pair);
