@@ -16,7 +16,7 @@ void GameScene::Init()
 {
 	//Font font;
 	//font.loadFromFile("../Resources/Fonts/Dosis-Light.ttf");
-
+		
 	//scoreText.setFont(font);
 	//scoreText.setCharacterSize(20);
 	//scoreText.setFillColor(Color::White);

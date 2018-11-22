@@ -17,8 +17,8 @@ public:
 	Scene();
 	~Scene();
 
-	virtual void Update(float deltime){};
-	virtual void Render(RenderWindow &window){};
-	virtual void Init(){};
+	virtual void Update(float deltime) = 0;
+	virtual void Render(RenderWindow &window) = 0;
+	virtual void Init() = 0;
 };
 

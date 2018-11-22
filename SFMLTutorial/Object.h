@@ -11,8 +11,9 @@ public:
 
 	Object();
 	~Object();
-	virtual void Init(Texture *texture){};
-	virtual void Render(RenderWindow &window){};
-	virtual void Update(float deltime){};
+
+	virtual void Init(Texture *texture) = 0;
+	virtual void Render(RenderWindow &window) =0;
+	virtual void Update(float deltime) =0;
 };
 

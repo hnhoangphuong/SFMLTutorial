@@ -22,6 +22,10 @@ Player::Player(Texture *texture, Vector2f pos)
 	if(!m_textureBullet.loadFromFile("../Resources/Assets/Bullets/goldBulletDown.png"))
 		cout << "Error : Failed to load Bullet" << endl;
 }
+
+void Player::Init(Texture *window)
+{}
+
 void Player::Render(RenderWindow &window)
 {
 	//player
