@@ -9,6 +9,7 @@
 
 #include "SceneMgr.h"
 #include "GameWindow.h"
+#include "GameEvent.h"
 #include <Windows.h>
 
 
@@ -27,10 +28,10 @@ void main()
 
 	while (GameWindow::GetInstance()->IsDisplayed())
 	{
-		Event event;
-		while (GameWindow::GetInstance()->EventListener(event));
+		GameEvent event;
+		while (GameWindow::GetInstance()->EventListener(event.m_event));
 		{
-			if (event.type == Event::Closed)
+			if (event.GetTypes() == EventTypes::Closed)
 				GameWindow::GetInstance()->Close();
 		}
 
