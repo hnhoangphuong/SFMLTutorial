@@ -2,11 +2,12 @@
 //
 ///////////////////////////////////////////
 
-#include "SceneMgr.h"
-#include<math.h>
-#include<cstdlib>
-#include<vector>
+#include <math.h>
+#include <cstdlib>
+#include <vector>
 #include <ctime> 
+
+#include "SceneMgr.h"
 
 void main()
 {
@@ -29,12 +30,12 @@ void main()
 
 		elapsed = clock.getElapsedTime();
 
-		//UPDATE =================================================================== UPDATE
+		//UPDATE =========================UPDATE========================================== 
 		SceneMgr::GetInstance()->Update(elapsed.asSeconds());
 
 		clock.restart();
 
-		//Draw ===================================================================== DRAW
+		//Draw ============================DRAW=========================================== 
 		window.clear();
 		SceneMgr::GetInstance()->Render( window);
 		window.display();
