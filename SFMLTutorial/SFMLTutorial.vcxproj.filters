@@ -37,6 +37,12 @@
     <Filter Include="Header Files\Models">
       <UniqueIdentifier>{63f0721b-c0b1-4f44-bd0c-1f9e26a1f762}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{f2507f5c-0b04-405d-aee9-b02f0f238f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{91f253a5-270b-44d8-8f14-b0f68f4bcad1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -75,6 +81,9 @@
     <ClInclude Include="Player.h">
       <Filter>Header Files\Models</Filter>
     </ClInclude>
+    <ClInclude Include="ResourcesManager.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -106,6 +115,9 @@
     </ClCompile>
     <ClCompile Include="SceneMgr.cpp">
       <Filter>Source Files\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourcesManager.cpp">
+      <Filter>Source Files\GameScenes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
