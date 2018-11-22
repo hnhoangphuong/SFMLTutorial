@@ -42,6 +42,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\Bin\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -82,16 +83,16 @@
       <AdditionalDependencies>winmm.lib;opengl32.lib;freetype.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-main.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  
- <ItemDefinitionGroup>
-        <CustomBuildStep>
-          <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+  <ItemDefinitionGroup>
+    <CustomBuildStep>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
         xcopy "$(ProjectDir)..\Resources" "$(ProjectDir)..\Bin\Resources" /D /E /I /F /Y
+        xcopy "$(ProjectDir)..\SFML-2.5.0\bin" "$(ProjectDir)..\Bin\" /D /E /I /F /Y
           </Command>
-          <Outputs>$(TargetName).cab</Outputs>
-          <Inputs>$(TargetFileName)</Inputs>
-        </CustomBuildStep>
-        </ItemDefinitionGroup>
+      <Outputs>$(TargetName).cab</Outputs>
+      <Inputs>$(TargetFileName)</Inputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
