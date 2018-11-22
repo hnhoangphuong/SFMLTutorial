@@ -82,6 +82,16 @@
       <AdditionalDependencies>winmm.lib;opengl32.lib;freetype.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-main.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
+  
+ <ItemDefinitionGroup>
+        <CustomBuildStep>
+          <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+        xcopy "$(ProjectDir)..\Resources" "$(ProjectDir)..\Bin\Resources" /D /E /I /F /Y
+          </Command>
+          <Outputs>$(TargetName).cab</Outputs>
+          <Inputs>$(TargetFileName)</Inputs>
+        </CustomBuildStep>
+        </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
