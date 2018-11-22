@@ -8,36 +8,44 @@
 #include <ctime> 
 
 #include "SceneMgr.h"
+#include "GameWindow.h"
+#include "GameEvent.h"
+#include <Windows.h>
+
 
 void main()
 {
 	srand((unsigned int)time(NULL));
-	RenderWindow window(VideoMode(WINDOWS_W, WINDOWS_H), "Spaceship Game!", Style::Default);
-	window.setFramerateLimit(200);
+
+	GameWindow::GetInstance()->Init(WINDOWS_NAME);
+	GameWindow::GetInstance()->SetLimitFPS(200);
 
 	SceneMgr::GetInstance()->Init();
 
-	Clock clock;
-	Time elapsed;
-	while (window.isOpen())
+	DWORD start, end;
+	DWORD deltaTime;
+	start = GetTickCount();
+
+	while (GameWindow::GetInstance()->IsDisplayed())
 	{
-		Event event;
-		while (window.pollEvent(event))
+		GameEvent event;
+		while (GameWindow::GetInstance()->EventListener(event.m_event));
 		{
-			if (event.type == Event::Closed)
-				window.close();
+			if (event.GetTypes() == EventTypes::Closed)
+				GameWindow::GetInstance()->Close();
 		}
 
-		elapsed = clock.getElapsedTime();
+		end = GetTickCount();
+		deltaTime = end - start;
 
 		//UPDATE =========================UPDATE========================================== 
-		SceneMgr::GetInstance()->Update(elapsed.asSeconds());
-
-		clock.restart();
+		SceneMgr::GetInstance()->Update((float)deltaTime / 1000.0f);
 
 		//Draw ============================DRAW=========================================== 
-		window.clear();
-		SceneMgr::GetInstance()->Render( window);
-		window.display();
+		GameWindow::GetInstance()->Clear();
+		SceneMgr::GetInstance()->Render(GameWindow::GetInstance()->m_renderWindow);
+		GameWindow::GetInstance()->Display();
+		start = end;
+
 	}
 }

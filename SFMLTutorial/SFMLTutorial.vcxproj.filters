@@ -42,6 +42,12 @@
     </Filter>
     <Filter Include="Source Files\Core">
       <UniqueIdentifier>{91f253a5-270b-44d8-8f14-b0f68f4bcad1}</UniqueIdentifier>
+    <Filter Include="Header Files\Systems">
+      <UniqueIdentifier>{06aee011-a132-4782-b329-21d6952d935a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems">
+      <UniqueIdentifier>{50f61485-aa73-42ad-98ce-55a8ebdaeaea}</UniqueIdentifier>
+
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +87,12 @@
     <ClInclude Include="Player.h">
       <Filter>Header Files\Models</Filter>
     </ClInclude>
+    <ClInclude Include="GameWindow.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEvent.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
     <ClInclude Include="ResourcesManager.h">
       <Filter>Header Files\GameScenes</Filter>
     </ClInclude>
@@ -115,6 +127,12 @@
     </ClCompile>
     <ClCompile Include="SceneMgr.cpp">
       <Filter>Source Files\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameWindow.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEvent.cpp">
+      <Filter>Source Files\Systems</Filter>
     </ClCompile>
     <ClCompile Include="ResourcesManager.cpp">
       <Filter>Source Files\GameScenes</Filter>
