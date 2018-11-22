@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{97BED756-6276-4EF8-A4AC-EA6A3AB7D5C4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SFMLTutorial</RootNamespace>
+    <ProjectName>FrameworkSFML</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\SFML-2.5.0\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\SFML-2.5.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;winmm.lib;opengl32.lib;freetype.lib;sfml-main-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\SFML-2.5.0\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\SFML-2.5.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;opengl32.lib;freetype.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="MenuScene.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="SceneMgr.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="MenuScene.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="SceneMgr.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\Assets\Background\LayerBackground.png" />
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-1.jpg" />
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-2.jpg" />
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-3.jpg" />
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-4.jpg" />
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-5.jpg" />
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-6.jpg" />
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-7.jpg" />
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-8.jpg" />
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-9.jpg" />
+    <Image Include="..\Resources\Assets\cursor.png" />
+    <Image Include="..\Resources\Assets\heart.png" />
+    <Image Include="..\Resources\Assets\iceIcon.png" />
+    <Image Include="..\Resources\Assets\logo.png" />
+    <Image Include="..\Resources\Assets\mc.png" />
+    <Image Include="..\Resources\Assets\PauseIcon.png" />
+    <Image Include="..\Resources\Assets\shield.png" />
+    <Image Include="..\Resources\Assets\shieldIcon.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A1.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A10.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A11.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A12.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A13.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A14.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A15.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A16.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A17.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A18.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A2.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A3.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A4.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A5.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A6.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A7.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A8.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A9.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B1.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B10.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B11.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B12.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B13.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B14.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B15.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B16.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B17.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B18.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B2.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B3.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B4.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B5.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B6.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B7.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B8.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B9.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C1.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C10.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C11.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C12.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C13.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C14.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C15.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C16.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C17.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C18.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C2.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C3.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C4.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C5.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C6.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C7.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C8.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C9.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D1.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D10.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D11.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D12.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D13.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D14.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D15.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D16.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D17.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D18.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D2.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D3.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D4.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D5.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D6.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D7.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D8.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D9.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E1.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E10.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E11.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E12.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E13.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E14.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E15.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E16.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E17.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E18.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E2.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E3.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E4.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E5.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E6.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E7.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E8.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E9.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F1.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F10.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F11.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F12.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F13.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F14.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F15.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F16.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F17.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F18.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F2.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F3.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F4.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F5.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F6.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F7.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F8.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F9.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G1.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G10.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G11.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G12.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G13.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G14.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G15.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G16.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G17.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G18.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G2.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G3.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G4.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G5.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G6.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G7.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G8.png" />
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G9.png" />
+    <Image Include="..\Resources\Assets\tripleIcon.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

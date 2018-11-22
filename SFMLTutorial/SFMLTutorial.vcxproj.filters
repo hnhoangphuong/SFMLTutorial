@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Background">
+      <UniqueIdentifier>{fd84c795-edd0-47e0-9ddf-56ab830e4646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Spaceship">
+      <UniqueIdentifier>{c8af15ba-9fae-4a35-b13e-174537b06fc8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\Assets\cursor.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\heart.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\iceIcon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\mc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\PauseIcon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\shield.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\shieldIcon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\tripleIcon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\Background\LayerBackground.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-1.jpg">
+      <Filter>Resource Files\Background</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-2.jpg">
+      <Filter>Resource Files\Background</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-3.jpg">
+      <Filter>Resource Files\Background</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-4.jpg">
+      <Filter>Resource Files\Background</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-5.jpg">
+      <Filter>Resource Files\Background</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-6.jpg">
+      <Filter>Resource Files\Background</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-7.jpg">
+      <Filter>Resource Files\Background</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-8.jpg">
+      <Filter>Resource Files\Background</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\Background\SpaceBackground-9.jpg">
+      <Filter>Resource Files\Background</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A1.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A2.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A3.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A4.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A5.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A6.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A7.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A8.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A9.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A10.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A11.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A12.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A13.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A14.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A15.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A16.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A17.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\A18.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B1.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B2.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B3.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B4.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B5.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B6.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B7.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B8.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B9.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B10.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B11.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B12.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B13.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B14.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B15.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B16.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B17.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\B18.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C1.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C2.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C3.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C4.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C5.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C6.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C7.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C8.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C9.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C10.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C11.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C12.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C13.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C14.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C15.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C16.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C17.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\C18.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D1.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D2.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D3.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D4.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D5.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D6.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D7.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D8.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D9.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D10.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D11.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D12.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D13.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D14.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D15.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D16.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D17.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\D18.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E1.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E2.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E3.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E4.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E5.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E6.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E7.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E8.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E9.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E10.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E11.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E12.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E13.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E14.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E15.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E16.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E17.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\E18.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F1.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F2.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F3.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F4.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F5.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F6.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F7.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F8.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F9.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F10.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F11.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F12.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F13.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F14.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F15.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F16.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F17.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\F18.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G1.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G2.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G3.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G4.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G5.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G6.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G7.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G8.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G9.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G10.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G11.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G12.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G13.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G14.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G15.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G16.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G17.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+    <Image Include="..\Resources\Assets\SpaceShipsPack\G18.png">
+      <Filter>Resource Files\Spaceship</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
