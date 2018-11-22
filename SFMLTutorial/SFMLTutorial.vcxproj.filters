@@ -37,6 +37,12 @@
     <Filter Include="Header Files\Models">
       <UniqueIdentifier>{63f0721b-c0b1-4f44-bd0c-1f9e26a1f762}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Systems">
+      <UniqueIdentifier>{06aee011-a132-4782-b329-21d6952d935a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems">
+      <UniqueIdentifier>{50f61485-aa73-42ad-98ce-55a8ebdaeaea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -75,8 +81,8 @@
     <ClInclude Include="Player.h">
       <Filter>Header Files\Models</Filter>
     </ClInclude>
-    <ClInclude Include="Windows.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="GameWindow.h">
+      <Filter>Header Files\Systems</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -110,8 +116,8 @@
     <ClCompile Include="SceneMgr.cpp">
       <Filter>Source Files\Manager</Filter>
     </ClCompile>
-    <ClCompile Include="Windows.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="GameWindow.cpp">
+      <Filter>Source Files\Systems</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
