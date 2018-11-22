@@ -8,24 +8,27 @@
 #include <ctime> 
 
 #include "SceneMgr.h"
+#include "Windows.h"
 
 void main()
 {
 	srand((unsigned int)time(NULL));
-	RenderWindow window(VideoMode(WINDOWS_W, WINDOWS_H), "Spaceship Game!", Style::Default);
-	window.setFramerateLimit(200);
+	//RenderWindow window(VideoMode(WINDOWS_W, WINDOWS_H), "Spaceship Game!", Style::Default);
+	Windows::GetInstance()->Init(WINDOWS_NAME);
+	//window.setFramerateLimit(200);
+	Windows::GetInstance()->SetLimitFPS(200);
 
 	SceneMgr::GetInstance()->Init();
 
 	Clock clock;
 	Time elapsed;
-	while (window.isOpen())
+	while (Windows::GetInstance()->IsDisplayed())
 	{
 		Event event;
-		while (window.pollEvent(event))
+		while (Windows::GetInstance()->EventListener(event));
 		{
 			if (event.type == Event::Closed)
-				window.close();
+				Windows::GetInstance()->Close();
 		}
 
 		elapsed = clock.getElapsedTime();
@@ -36,8 +39,8 @@ void main()
 		clock.restart();
 
 		//Draw ============================DRAW=========================================== 
-		window.clear();
-		SceneMgr::GetInstance()->Render( window);
-		window.display();
+		Windows::GetInstance()->Clear();
+		SceneMgr::GetInstance()->Render(Windows::GetInstance()->m_renderWindow);
+		Windows::GetInstance()->Display();
 	}
 }
