@@ -104,6 +104,7 @@
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="MenuScene.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="ResourcesManager.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="SceneMgr.h" />
@@ -118,6 +119,7 @@
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="MenuScene.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="ResourcesManager.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="SceneMgr.cpp" />

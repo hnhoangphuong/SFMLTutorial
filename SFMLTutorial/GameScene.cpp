@@ -1,4 +1,6 @@
 #include "GameScene.h"
+#include "ResourcesManager.h"
+
 GameScene::GameScene()
 {
 }
@@ -53,11 +55,10 @@ void GameScene::Init()
 		m_spriteBackground.setTexture(m_textureBackground);
 		m_spriteBackground.setScale(ScaleX, ScaleY);
 	}
+	
 	//Player
-	if (!m_texturePlayer.loadFromFile("../Resources/Assets/mc.png"))
-		cout << "Error : Failed to load player" << endl;
-	else
-		m_pPlayer = new Player(&m_texturePlayer,Vector2f(0.f, WINDOWS_H/2));
+	m_pPlayer = new Player(CacheImageName(PATH_TEXTURE_PLAYER),
+		Vector2f(0.f, WINDOWS_H/2));
 
 	//Enemy texture
 	if(!m_textureEnemy.loadFromFile("../Resources/Assets/SpaceShips/F2.png"))

@@ -37,11 +37,17 @@
     <Filter Include="Header Files\Models">
       <UniqueIdentifier>{63f0721b-c0b1-4f44-bd0c-1f9e26a1f762}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{f2507f5c-0b04-405d-aee9-b02f0f238f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{91f253a5-270b-44d8-8f14-b0f68f4bcad1}</UniqueIdentifier>
     <Filter Include="Header Files\Systems">
       <UniqueIdentifier>{06aee011-a132-4782-b329-21d6952d935a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Systems">
       <UniqueIdentifier>{50f61485-aa73-42ad-98ce-55a8ebdaeaea}</UniqueIdentifier>
+
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +93,9 @@
     <ClInclude Include="GameEvent.h">
       <Filter>Header Files\Systems</Filter>
     </ClInclude>
+    <ClInclude Include="ResourcesManager.h">
+      <Filter>Header Files\GameScenes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -124,6 +133,9 @@
     </ClCompile>
     <ClCompile Include="GameEvent.cpp">
       <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourcesManager.cpp">
+      <Filter>Source Files\GameScenes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
