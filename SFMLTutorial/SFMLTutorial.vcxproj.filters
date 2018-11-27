@@ -42,6 +42,7 @@
     </Filter>
     <Filter Include="Source Files\Core">
       <UniqueIdentifier>{91f253a5-270b-44d8-8f14-b0f68f4bcad1}</UniqueIdentifier>
+	</Filter>
     <Filter Include="Header Files\Systems">
       <UniqueIdentifier>{06aee011-a132-4782-b329-21d6952d935a}</UniqueIdentifier>
     </Filter>
